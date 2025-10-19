@@ -2,15 +2,22 @@
 
 A new Flutter project.
 
-## Getting Started
+The main screen or starting point of your application. The display is very minimalist, containing only the title “Main Menu” and a single “Start Text Scan” button. The function of this screen is to direct users to start the scanning process.
 
-This project is a starting point for a Flutter application.
+![screenshot hello_world](images/1.jpg)
 
-A few resources to get you started if this is your first Flutter project:
+The camera interface appears after the user presses the “Start Text Scan” button. The camera activates and is directed at a document containing text and mathematical notation, specifically integral formulas. At the bottom is the “Take Photo & Scan” button to take a picture and send it to the OCR process.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![screenshot hello_world](images/2.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The screen shows the results after scanning a math document. The app successfully extracted the text, but the results aren't accurate. It's clear that the OCR model has trouble recognizing math symbols. For example, the integral symbol (∫) is misinterpreted as the letter ‘J’, and the equation format is messed up.
+
+![screenshot hello_world](images/3.jpg)
+
+active camera view. This time, the camera is pointed at a page in a physics textbook that discusses thermodynamic concepts such as isothermal, isochoric, and adiabatic processes. This demonstrates the application's testing on different types of content (plain text interspersed with physics formulas).
+
+![screenshot hello_world](images/4.jpg)
+
+The results screen for scanning physics books. As in the case of mathematics, plain text is read quite well. However, physics formulas and symbols become irregular and inaccurate when extracted. This confirms that the main challenge for your application at this time is recognizing complex scientific and mathematical notation.
+
+![screenshot hello_world](images/5.jpg)
