@@ -28,6 +28,6 @@ Change ElevatedButton on HomeScreen (lib/screens/home_screen.dart) to ListTile w
 
 ![screenshot hello_world](images/6.jpg)
 
-Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(’Mulai Pindai Teks Baru’).
+Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(’Mulai Pindai Teks Baru’). The onTap function must use Navigator.push() to go to ScanScreen.
 
 ![screenshot hello_world](images/7.jpg)
