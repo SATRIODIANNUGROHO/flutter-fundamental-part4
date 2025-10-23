@@ -35,3 +35,5 @@ Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(
 In ResultScreen (lib/screens/result_screen.dart), remove the ocrText.replaceAll(’) function so that the text results are displayed with complete new lines (\n).
 
 Add a FloatingActionButton with the Icons.home icon.
+
+When the button is pressed, navigation should return directly to the HomeScreen using Navigator.pushAndRemoveUntil() (or an equivalent method) to remove all pages above it from the navigation stack.
