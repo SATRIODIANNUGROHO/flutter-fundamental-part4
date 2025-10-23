@@ -33,10 +33,25 @@ class _ResultScreenState extends State<ResultScreen> {
     super.dispose();
   }
 
+  void _speak() {
+    if (widget.ocrText.isNotEmpty) {
+      flutterTts.speak(widget.ocrText);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Hasil OCR')),
+      appBar: AppBar(
+        title: const Text('Hasil OCR'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.volume_up),
+            onPressed: _speak,
+            tooltip: 'Bacakan Teks',
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
