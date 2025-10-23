@@ -51,6 +51,8 @@ Colors.yellow).
 • Below the indicator, add Text(’Loading Camera... Please wait.’,
 style: TextStyle(color: Colors.white, fontSize: 18)).
 
+![screenshot hello_world](images/8.jpg)
+
 Error Message Specifications (20 points):
 • In the _takePicture() function in ScanScreen, modify the catch (e) block to
 change the *error* message in SnackBar.
@@ -75,3 +77,5 @@ Reading Functionality (15 Points):
 with an action button) with the Icons.volume_up icon.
 • When the button is pressed, call the speak() function on FlutterTts to read
 the entire contents of ocrText.
+
+![screenshot hello_world](images/9.jpg)
