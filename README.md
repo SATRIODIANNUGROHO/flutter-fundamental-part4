@@ -24,6 +24,8 @@ The results screen for scanning physics books. As in the case of mathematics, pl
 
 ———————————————————(UTS)———————————————————
 
+SOAL 1
+
 Change ElevatedButton on HomeScreen (lib/screens/home_screen.dart) to ListTile widget.
 
 ![screenshot hello_world](images/6.jpg)
@@ -37,3 +39,5 @@ In ResultScreen (lib/screens/result_screen.dart), remove the ocrText.replaceAll(
 Add a FloatingActionButton with the Icons.home icon.
 
 When the button is pressed, navigation should return directly to the HomeScreen using Navigator.pushAndRemoveUntil() (or an equivalent method) to remove all pages above it from the navigation stack.
+
+SOAL 2
