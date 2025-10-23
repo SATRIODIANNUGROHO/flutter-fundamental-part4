@@ -31,3 +31,5 @@ Change ElevatedButton on HomeScreen (lib/screens/home_screen.dart) to ListTile w
 Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(’Mulai Pindai Teks Baru’). The onTap function must use Navigator.push() to go to ScanScreen.
 
 ![screenshot hello_world](images/7.jpg)
+
+In ResultScreen (lib/screens/result_screen.dart), remove the ocrText.replaceAll(’) function so that the text results are displayed with complete new lines (\n).
