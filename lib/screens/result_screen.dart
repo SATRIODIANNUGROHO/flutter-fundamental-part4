@@ -15,10 +15,17 @@ class ResultScreen extends StatelessWidget {
           child: SelectableText(
             ocrText.isEmpty
                 ? 'Tidak ada teks ditemukan.'
-                : ocrText,
+                : ocrText, // Fungsi replaceAll() telah dihapus
             style: const TextStyle(fontSize: 18),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton( // FAB ditambahkan
+        onPressed: () {
+          // Kembali ke layar sebelumnya (biasanya HomeScreen)
+          Navigator.pop(context); 
+        },
+        child: const Icon(Icons.home),
       ),
     );
   }

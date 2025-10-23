@@ -33,3 +33,5 @@ Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(
 ![screenshot hello_world](images/7.jpg)
 
 In ResultScreen (lib/screens/result_screen.dart), remove the ocrText.replaceAll(’) function so that the text results are displayed with complete new lines (\n).
+
+Add a FloatingActionButton with the Icons.home icon.
