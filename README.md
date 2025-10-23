@@ -27,3 +27,7 @@ The results screen for scanning physics books. As in the case of mathematics, pl
 Change ElevatedButton on HomeScreen (lib/screens/home_screen.dart) to ListTile widget.
 
 ![screenshot hello_world](images/6.jpg)
+
+Atur ListTile: leading: Icon(Icons.camera_alt, color: Colors.blue); title: Text(’Mulai Pindai Teks Baru’).
+
+![screenshot hello_world](images/7.jpg)
