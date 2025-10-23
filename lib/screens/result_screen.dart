@@ -1,10 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'home_screen.dart';
 
-class ResultScreen extends StatelessWidget {
+class ResultScreen extends StatefulWidget {
   final String ocrText;
 
   const ResultScreen({super.key, required this.ocrText});
+
+  @override
+  State<ResultScreen> createState() => _ResultScreenState();
+}
+
+class _ResultScreenState extends State<ResultScreen> {
+  late FlutterTts flutterTts;
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeTts();
+  }
+
+  void _initializeTts() async {
+    flutterTts = FlutterTts();
+    await flutterTts.setLanguage("id-ID");
+    await flutterTts.setPitch(1.0);
+    await flutterTts.setSpeechRate(0.5);
+  }
+
+  @override
+  void dispose() {
+    flutterTts.stop();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +41,9 @@ class ResultScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: SelectableText(
-            ocrText.isEmpty
+            widget.ocrText.isEmpty
                 ? 'Tidak ada teks ditemukan.'
-                : ocrText,
+                : widget.ocrText,
             style: const TextStyle(fontSize: 18),
           ),
         ),
