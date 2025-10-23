@@ -21,3 +21,9 @@ active camera view. This time, the camera is pointed at a page in a physics text
 The results screen for scanning physics books. As in the case of mathematics, plain text is read quite well. However, physics formulas and symbols become irregular and inaccurate when extracted. This confirms that the main challenge for your application at this time is recognizing complex scientific and mathematical notation.
 
 ![screenshot hello_world](images/5.jpg)
+
+———————————————————(UTS)———————————————————
+
+Change ElevatedButton on HomeScreen (lib/screens/home_screen.dart) to ListTile widget.
+
+![screenshot hello_world](images/6.jpg)
